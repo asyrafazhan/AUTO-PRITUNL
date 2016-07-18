@@ -3,7 +3,7 @@
 -----------------------------------------
 www.pritunl.com
 
-Createed by ASYRAFAZHAN
+Created by ASYRAFAZHAN
 -----------------------------------------
 
 APA YANG ADA DALAM SKRIP INI ?
