@@ -76,6 +76,6 @@ echo "TimeZone   :  Malaysia"
 echo "Vnstat     :  http://$MYIP:81/vnstat"
 echo "Pritunl    :  https://$MYIP"
 echo "Sila login ke pritunl untuk proceed step seterusnya"
-echo "Sila copy command dibawah dan paste di putty untuk masuk ke Pritunl anda"
+echo "Sila copy key dibawah dan paste di Pritunl anda"
 pritunl setup-key
 
