@@ -13,6 +13,9 @@ apt-get --assume-yes upgrade
 apt-get --assume-yes install pritunl mongodb-org
 service pritunl start
 
+#Install Nano
+apt-get -y install nano
+
 # Install Squid
 apt-get -y install squid
 cp /etc/squid3/squid.conf /etc/squid3/squid.conf.orig
@@ -22,8 +25,9 @@ sed -i s/xxxxxxxxx/$MYIP/g /etc/squid3/squid.conf;
 service squid3 restart
 
 # Enable Firewall
-sudo ufw allow 7822,80,81,222,443,8080,9700,65000/tcp
-sudo ufw allow 7822,80,81,222,443,8080,9700,65000/udp
+apt-get -y install ufw
+sudo ufw allow 22,7822,80,81,222,443,8080,9700,65000/tcp
+sudo ufw allow 22,7822,80,81,222,443,8080,9700,65000/udp
 sudo yes | ufw enable
 
 # Change to Time GMT+8
