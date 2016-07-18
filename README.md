@@ -1,14 +1,12 @@
-# PRITUNL-AUTO-SCRIP
+# AUTO-PRITUNL
 
 -----------------------------------------
 www.pritunl.com
 
-Create By DRCYBER
+Createed by ASYRAFAZHAN
 -----------------------------------------
 
-
-
-Script ini hanya mengandungi
+APA YANG ADA DALAM SKRIP INI ?
 
 -Pritunl
 
@@ -30,7 +28,7 @@ Script ini hanya mengandungi
 
 -----------------------------------------
 
-Script
+BAGAIMANA CARA UNTUK MENGGUNAKAN AUTOSCRIPT INI ?
 
 
 -COPY PASTE SAHAJA PADA PUTTY DAN TUNGGU PROSES INSTALL SELESAI
