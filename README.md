@@ -48,7 +48,8 @@ chmod +x ubuntu14.sh
 -----------------------------------------
 
 Untuk membeli server dari DigitalOcean :- https://m.do.co/c/ec4f29ced665
-Untuk menyewa server BERKELAJUAN TINGGI :-PM 
+
+Untuk menyewa server BERKELAJUAN TINGGI :-PM saya di TELEGRAM @aaron_3796
 
 -----------------------------------------
 
