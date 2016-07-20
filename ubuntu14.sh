@@ -26,8 +26,8 @@ service squid3 restart
 
 # Enable Firewall
 apt-get -y install ufw
-sudo ufw allow 22,7822,80,81,222,443,8080,9700,65000/tcp
-sudo ufw allow 22,7822,80,81,222,443,8080,9700,65000/udp
+sudo ufw allow 22,80,81,222,443,8080,9700,65000,60020/tcp
+sudo ufw allow 22,80,81,222,443,8080,9700,65000,60020/udp
 sudo yes | ufw enable
 
 # Change to Time GMT+8
@@ -73,7 +73,7 @@ echo "-Pritunl"
 echo "-MongoDB"
 echo "-Vnstat"
 echo "-Web Server"
-echo "-Squid Proxy Port 65000"
+echo "-Squid Proxy Port 65000/60020"
 echo "Autoscript Ini Daripada AsyrafAzhan"
 echo "Telegram @aaron_3796"
 echo "TimeZone   :  Malaysia"
