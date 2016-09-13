@@ -33,8 +33,8 @@ service squid3 restart
 
 # Enable Firewall
 apt-get -y install ufw
-sudo ufw allow 22,80,81,222,443,8080,9700,65000,60020/tcp
-sudo ufw allow 22,80,81,222,443,8080,9700,65000,60020/udp
+sudo ufw allow 22,80,81,222,443,8080,9700,65000,60020,1194/tcp
+sudo ufw allow 22,80,81,222,443,8080,9700,65000,60020,1194/udp
 sudo yes | ufw enable
 
 # Change to Time GMT+8
