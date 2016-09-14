@@ -36,16 +36,6 @@ apt-get -y install ufw
 sudo ufw allow 22,53,80,81,222,443,8080,9700,65000,60020,1194/tcp
 sudo ufw allow 22,53,80,81,222,443,8080,9700,65000,60020,1194/udp
 sudo yes | ufw enable
-wget -O /etc/iptables.up.rules "https://raw.github.com/asyrafazhan/AUTO-PRITUNL/master/conf/iptables.up.rules"
-sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
-sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.d/rc.local
-MYIP=`curl -s ifconfig.me`;
-MYIP2="s/xxxxxxxxx/$MYIP/g";
-sed -i $MYIP2 /etc/iptables.up.rules;
-iptables-restore < /etc/iptables.up.rules
-sysctl -w net.ipv4.ip_forward=1
-sed -i 's/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g' /etc/sysctl.conf
-service openvpn restart
 
 # Change to Time GMT+8
 ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
